@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: k8s-production-release
+context:
+  scaffold_script: place-files.sh
+expected_outcome: |
+  Makefile のターゲットと k8s マニフェストに即した、本番 api v2.4.0 リリースの日本語Markdown手順書を docs/ 配下に作成する。
+  kubectl コンテキスト確認、マイグレーション→デプロイの順序、rollout status 等の期待結果、
+  アプリとマイグレーションそれぞれのロールバック方針（戻せない地点の明示を含む）がある。

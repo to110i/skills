@@ -1,0 +1,7 @@
+schema_version: "1.1"
+name: monthly-orders-archive-batch
+context:
+  scaffold_script: place-files.sh
+expected_outcome: |
+  リポジトリ内の run_archive.sh / archive_orders.sql を使った月次アーカイブの日本語Markdown手順書。
+  事前の件数確認・バックアップ、DELETE前の注意喚起と接続先確認、件数一致の確認、失敗時のロールバック（アーカイブから戻す等）を含む。

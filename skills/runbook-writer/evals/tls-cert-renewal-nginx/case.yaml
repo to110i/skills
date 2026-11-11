@@ -1,0 +1,5 @@
+schema_version: "1.1"
+name: tls-cert-renewal-nginx
+expected_outcome: |
+  nginx 2台の証明書を1台ずつ更新する日本語のMarkdown手順書。前提条件・事前確認（現行証明書のバックアップ、新証明書と鍵の整合確認）、
+  各手順の期待結果、nginx -t による設定確認、ロールバック手順を含み、コマンドはコピペで実行できる形になっている。

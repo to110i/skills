@@ -1,0 +1,16 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: api-migrate-__VERSION__
+spec:
+  backoffLimit: 0
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: migrate
+          image: 123456789012.dkr.ecr.ap-northeast-1.amazonaws.com/api:__VERSION__
+          command: ["bin/migrate", "up"]
+          envFrom:
+            - secretRef:
+                name: api-env
